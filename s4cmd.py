@@ -1890,8 +1890,8 @@ if __name__ == '__main__':
 
   # Initalize keys for S3.
   S3Handler.init_s3_keys(opt)
-  if S3Handler.S3_KEYS is None:
-    fail('[Invalid Argument] access key or secret key is not provided ', status = -1)
+  #if S3Handler.S3_KEYS is None:
+  #  fail('[Invalid Argument] access key or secret key is not provided ', status = -1)
   try:
     CommandHandler(opt).run(args)
   except InvalidArgument as e:
